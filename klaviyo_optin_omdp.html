@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    .light {
-      color: #202429;
-    }
-    .dark {
-      color: #FFF0D4;
-    }
-    h2 > span {
-      color: #202429;
-    }
-  </head>
+  <head></head>
   <body class="light">
     <div class="klaviyo-form-U4tBnm"></div>
     <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=RiM8Es"></script>
@@ -21,21 +11,6 @@
           email: '{{ email }}',
         },
       ]);
-    </script>
-    <script>
-      var theme = 'light',
-        localTheme = localStorage.getItem('theme');
-      if (localTheme)
-        try {
-          (parsed = JSON.parse(localTheme)) && parsed.mode && (theme = parsed.mode);
-        } catch (e) {}
-      var parsed,
-        themeData = document.getElementById('theme-data');
-      if (themeData)
-        try {
-          (parsed = JSON.parse(themeData.textContent)) && '<<DEFAULT_THEME>>' !== parsed.mode && ((theme = parsed.mode), (window.notionTheme = theme));
-        } catch (e) {}
-      'dark' === theme && document.body.classList.add('dark');
     </script>
   </body>
 </html>
